@@ -1,14 +1,11 @@
-import { Component, input } from '@angular/core';
-import { Field, FieldTree } from '@angular/forms/signals';
-import { Preferences } from './preferences-form.model';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-preferences-form',
   templateUrl: './preferences-form.component.html',
   styleUrls: ['./preferences-form.component.scss'],
-  imports: [Field],
+  imports: [],
 })
 export class PreferencesFormComponent {
-  readonly form = input.required<FieldTree<Preferences>>();
 }
 
