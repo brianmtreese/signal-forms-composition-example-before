@@ -1,0 +1,32 @@
+<div class="container">
+  <form (submit)="onSubmit($event)">
+    <app-account-form [form]="form.account" />
+    <app-address-form [form]="form.shippingAddress" />
+    <app-preferences-form [form]="form.preferences" />
+    <div class="actions">
+      <button type="submit" [disabled]="!form().valid()">
+        Submit
+      </button>
+    </div>
+  </form>
+
+  <!-- Debug Output -->
+  <div class="debug">
+    <h3>Debug Output</h3>
+    <div class="debug-section">
+      <strong>Form Value:</strong>
+      <pre>{{ form().value() | json }}</pre>
+    </div>
+    <div class="debug-section">
+      <strong>Form Valid:</strong>
+      <span [class.valid]="form().valid()" [class.invalid]="!form().valid()">
+        {{ form().valid() }}
+      </span>
+    </div>
+    <div class="debug-section">
+      <strong>Form Errors:</strong>
+      <pre>{{ form().errors() | json }}</pre>
+    </div>
+  </div>
+</div>
+

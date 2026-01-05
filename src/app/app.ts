@@ -1,12 +1,10 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ProfileFormComponent } from './sign-up/profile-form/profile-form.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  imports: [ProfileFormComponent],
+  template: `<app-profile-form />`
 })
 export class App {
-  protected readonly title = signal('signal-forms-composition');
 }
