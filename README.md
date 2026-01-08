@@ -40,15 +40,14 @@ All of these issues are addressed in the **after** repository.
 
 ---
 
-## Related Resources
-
-- 🟩 **Refactored Version (Signal Forms)**  
-  https://github.com/brianmtreese/signal-forms-composition-example-after
-
----
-
 ## How to Run
 
 ```bash
 npm install
 ng serve
+```
+---
+
+## Related Resources
+- 🎥 **YouTube Tutorial**: [https://youtu.be/hgy3t9mFmuc](https://youtu.be/hgy3t9mFmuc)
+- 🟩 **After Version (Pre–Signal Forms)**: [https://github.com/brianmtreese/signal-forms-composition-example-after](https://github.com/brianmtreese/signal-forms-composition-example-after)
